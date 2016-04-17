@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Accessing data", "1. Accessing data", "{B062E163-8CC8-4F94-8D2C-179701658CD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Querying and manipulating EF", "2. Querying and manipulating EF", "{B0CB1E71-3A99-45FE-9807-1D1483EED10D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Designing and implementing WCF", "3. Designing and implementing WCF", "{936B8B96-B5DF-4E9B-BA83-0C079EC6A6DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Creating and consuming Web API", "4. Creating and consuming Web API", "{1C696021-C7BE-42AC-B368-9D2A291E550C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Deploying web applications and services", "5. Deploying web applications and services", "{EA473A45-2412-4556-B253-B84C58DE3B78}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
