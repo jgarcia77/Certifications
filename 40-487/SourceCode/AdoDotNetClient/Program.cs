@@ -14,9 +14,43 @@ namespace AdoDotNetClient
     {
         static void Main(string[] args)
         {
+            ExecuteDataReader();
             //FillDataSetOneQuery();
             //FillDataSetTwoQueries();
             //FillDataSetTwoCommands();
+        }
+
+        static void ExecuteDataReader()
+        {
+            var connectionString =
+                ConfigurationManager.ConnectionStrings["rhdb"].ConnectionString;
+
+            var connection =
+                new SqlConnection(connectionString);
+
+            connection.Open();
+
+            var command = new SqlCommand("select * from ent_admin", connection);
+
+            var reader = command.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                var output = "Id {0}: Full Name: {1} {2}";
+
+                while (reader.Read())
+                {
+                    Debug.WriteLine(output, reader["admin_id"], reader["name_first"], reader["name_last"]);
+                }
+            }
+            else 
+            {
+                Debug.WriteLine("There are no records!");
+            }
+
+            reader.Close();
+
+            connection.Close();
         }
 
         static void FillDataSetOneQuery()
